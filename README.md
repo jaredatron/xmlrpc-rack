@@ -1,6 +1,6 @@
-# Xmlrpc::Rack
+# XMLRPC::Rack
 
-TODO: Write a gem description
+A rack app that serves a XMLRPC::BasicServer
 
 ## Installation
 
@@ -18,7 +18,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+XMLRPCServer = XMLRPC::BasicServer.new
+
+XMLRPCServer.set_default_handler do |*args|
+  ["echo", *args]
+end
+
+run XMLRPC::Rack.new XMLRPCServer
+
 
 ## Contributing
 

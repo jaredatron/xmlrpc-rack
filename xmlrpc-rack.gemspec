@@ -5,11 +5,11 @@ require 'xmlrpc/rack/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "xmlrpc-rack"
-  spec.version       = Xmlrpc::Rack::VERSION
+  spec.version       = XMLRPC::Rack::VERSION
   spec.authors       = ["Jared Grippe"]
   spec.email         = ["jared@deadlyicon.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{a rack app that serves a XMLRPC::BasicServer}
+  spec.summary       = %q{a rack app that serves a XMLRPC::BasicServer}
   spec.homepage      = ""
   spec.license       = "MIT"
 
